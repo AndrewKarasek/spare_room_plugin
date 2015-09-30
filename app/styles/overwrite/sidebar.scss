@@ -1,0 +1,88 @@
+$sidebarPadding: 2rem;
+
+
+/****************** resets ******************/
+.search_filter{ //enclose everything in here to fight specificity...
+	display: none !important;
+	background-color: $tarawera;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: -2000em;
+	z-index: 999;
+
+	.block_header{
+		background: none !important;
+	}
+
+	.block_area{
+		overflow: auto;
+		padding: 1rem $sidebarPadding;
+		border: none !important;
+	}
+		.block_area li{
+			color: white;
+		}
+
+
+
+
+
+	.block_content{
+		background-color: transparent !important;
+	}
+
+	.search_filter{
+
+	}
+
+
+	.block_area{
+		label{
+			color: white;
+			font-size: 1.4em;
+		}
+	}
+
+	input[type="text"]{
+		max-width: 9999999px;
+		width: 100%;
+		border: none;
+		font-size: 1em;
+		padding: .5rem;
+		box-sizing: border-box;
+		border-bottom: 2px solid white;
+		background-color: transparent;
+		color: white;
+		font-weight: bold;
+		margin-bottom: .5rem; 
+
+		&:focus{
+			color: white;
+		}
+	}
+
+
+	select{
+		-webkit-appearance: none;
+		font-size: 1em;
+		border: 2px solid white;
+		padding: .5em;
+		padding-right: 1em;
+		position: relative;
+		background-color: transparent;
+		color: white;
+		cursor: pointer;
+		float: right;
+		&:after{
+			position: absolute;
+			content: "\25bc";
+			right: 1rem;
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+
+
+

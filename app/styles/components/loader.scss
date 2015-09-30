@@ -1,0 +1,57 @@
+$width: 100px;
+
+
+.c-loader__wrap{
+	background-color: white;
+	width: 100%;
+	min-height: calc(100vh - 15rem);
+	z-index: 10000;
+	position: relative;
+	display: flex;
+  	align-items: center;
+    justify-content: center;
+
+}
+
+
+.circular {
+ animation: rotate 2s linear infinite;
+ height: $width;
+ position: relative;
+ width: $width;
+}
+
+
+.path {
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  stroke: $gold;
+  animation: 
+   dash 1.5s ease-in-out infinite,
+   color 6s ease-in-out infinite
+  ;
+  stroke-linecap: round;
+}
+
+@keyframes rotate{
+ 100%{
+  transform: rotate(360deg);
+ }
+}
+@keyframes dash{
+ 0%{
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+ }
+ 50%{
+  stroke-dasharray: 89,200;
+  stroke-dashoffset: -35;
+ }
+ 100%{
+  stroke-dasharray: 89,200;
+  stroke-dashoffset: -124;
+ }
+}
+@keyframes color{
+
+}

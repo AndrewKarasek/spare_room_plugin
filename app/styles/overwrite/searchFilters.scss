@@ -1,0 +1,15 @@
+.search_filtered_by{
+	background-color: $orient;	
+	padding: 1rem $sidebarPadding !important;
+	.block_area_label{
+		color: white !important;
+	}
+
+
+	.search_filtered_by{
+		border: none !important;
+		padding: .25rem !important;
+		box-sizing: border-box;
+		margin-bottom: .5rem !important;
+	}
+}
